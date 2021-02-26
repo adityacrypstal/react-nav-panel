@@ -1,4 +1,4 @@
-# React Custom Tab Panel
+# React Custom Nav Panel
 
 Control Multiple Tabs within React Component.
  
