@@ -14,7 +14,7 @@
     width: 40%;
     height: auto;
     max-height: 70vh;
-    margin: calc(100vh - 85vh - 20px) auto 0;
+    margin: calc(15vh - 20px) auto 0;
     background: #fff;
     border-radius: 4px;
     padding: 40px 20px;
@@ -28,7 +28,7 @@
     cursor: pointer;
     position: fixed;
     right: calc(30% - 30px);
-    top: calc(100vh - 85vh - 33px);
+    top: calc(15vh - 33px);
     background: #ededed;
     width: 25px;
     height: 25px;

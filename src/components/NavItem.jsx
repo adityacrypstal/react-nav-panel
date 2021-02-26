@@ -6,7 +6,7 @@ const NavItem = React.forwardRef(({active, data, remove, setActive, maxLength}, 
         const {value, closable} = data;
         return (
             <li className={active === value ? 'active' : ''}
-                ref={value === maxLength ? myref : null}
+                ref={value === 1 ? myref : null}
                 onClick={() => setActive(value)}>Tab {value} {closable &&
             <Close value={value} remove={remove}/>}</li>
         )

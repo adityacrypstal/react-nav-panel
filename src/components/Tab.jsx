@@ -43,14 +43,14 @@ const Tab = () => {
             let index = tabs.findIndex(a => a.value === i);
             setActive(tabs[index - 1].value)
         }
-        setTabs([...tabs.filter(a => a.value !== i)])
+        setTabs([...tabs.filter(a => a.value !== i)]);
         setDeleteId(null)
     };
 
     //********* Add New Tabs to Existing list *********//
     const addTab = async () => {
         let pad = lastItem.current.clientWidth;
-        await setTabs([...tabs, {value: tabs.length + 1, closable: true}]);
+        await setTabs([...tabs, {value: tabs[tabs.length - 1].value+1, closable: true}]);
         await setActive(tabs.length + 1);
         await parent.current.scrollBy({left: 900 + pad})
     };
