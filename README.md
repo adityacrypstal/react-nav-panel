@@ -7,7 +7,7 @@ You can see the [demo](https://codesandbox.io/s/react-custom-tab-panel-r8kb1).
 ![alt text](https://github.com/adityacrypstal/react-nav-panel/blob/master/image.gif)
 
 
-Created Using React 17.0.2
+React 17.0.2
 ## Installation
 
 Use the package manager [npm](https://www.npmjs.com/) to install node_modules.
