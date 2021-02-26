@@ -82,7 +82,10 @@ ul.navs li.active{
     border:dashed 1px #ccc;
     padding:15px;
 }
-.close{
+li .close{
+   display: none;
+}
+li:hover .close{
     position: absolute;
     right:3px;
     top: 3px;
@@ -91,6 +94,7 @@ ul.navs li.active{
     color: #999;
     padding:2px 3px;
     cursor: pointer;
+    display: flex;
 }
 @media(max-width:767px){
     .demo-container {

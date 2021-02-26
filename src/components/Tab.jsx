@@ -9,7 +9,7 @@ const behavior = 'smooth';
 const defaultTabs = 3;
 
 // Initialize Tabs and Its Content
-const init = Array.from({length: defaultTabs}, (v, k) => k).map(a => ({value: a + 1, closable: false}));
+const init = Array.from({length: defaultTabs}, (v, k) => k).map(a => ({value: a + 1, data: "dummy"}));
 
 // Tab Component
 const Tab = () => {
@@ -50,7 +50,7 @@ const Tab = () => {
     //********* Add New Tabs to Existing list *********//
     const addTab = async () => {
         let pad = lastItem.current.clientWidth;
-        await setTabs([...tabs, {value: tabs[tabs.length - 1].value+1, closable: true}]);
+        await setTabs([...tabs, {value: tabs[tabs.length - 1].value + 1, data: "dummy"}]);
         await setActive(tabs.length + 1);
         await parent.current.scrollBy({left: 900 + pad})
     };
