@@ -1,0 +1,58 @@
+/*Popup Container Which Covers Entire screen  */
+.popup-container {
+    position: fixed;
+    background: #00000050;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+/*Popup div with message and buttons  */
+.popup {
+    position: relative;
+    width: 40%;
+    height: auto;
+    max-height: 70vh;
+    margin: calc(100vh - 85vh - 20px) auto 0;
+    background: #fff;
+    border-radius: 4px;
+    padding: 40px 20px;
+    border: 1px solid #999;
+    overflow: auto;
+}
+
+/* Close Button at top left corner*/
+.close-btn {
+    content: 'x';
+    cursor: pointer;
+    position: fixed;
+    right: calc(30% - 30px);
+    top: calc(100vh - 85vh - 33px);
+    background: #ededed;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #999;
+    font-size: 20px;
+}
+
+/*Popup buttons / Action Button Container*/
+.popup-actions {
+    margin-top: 20px;
+}
+
+/* Cancel and Confirm Button*/
+.action-btn {
+    cursor: pointer;
+    padding: 5px 20px;
+    min-width: 100px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    margin: 10px;
+    background-color: #eee;
+    outline: none;
+}
