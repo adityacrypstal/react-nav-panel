@@ -5,15 +5,16 @@ const Navbar = React.forwardRef(({active, Scroll, remove, tabs, setActive, addTa
     const {parent, lastItem} = ref;
     return (
         <div className="tab-header">
-            {active !== 1 && <button className={'btn'} onClick={() => Scroll(-1)}> {'<'} </button>}
+            {active !== 1 && tabs.length > 1 && <button className={'btn'} onClick={() => Scroll(-1)}> {'<'} </button>}
 
             <div className={'navbar'} ref={parent}>
                 <ul className={'navs'}>
-                    {tabs.map((x) => <NavItem data={x} active={active} ref={lastItem} remove={remove}
-                                              setActive={setActive} maxLength={tabs.length}/>)}
+                    {tabs.map((x, i) => <NavItem key={i} index={i} data={x} active={active} ref={lastItem}
+                                                 remove={remove}
+                                                 setActive={setActive} maxLength={tabs.length}/>)}
                 </ul>
             </div>
-            {(tabs.length !== active) &&
+            {(tabs.length !== active && tabs.length > 1) &&
             <button className={'btn'} onClick={() => Scroll(1)}> {'>'} </button>}
             {tabs.length <= 10 && <button className={'btn'} onClick={addTab}> {'+'} </button>}
         </div>

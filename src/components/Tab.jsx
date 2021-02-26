@@ -41,7 +41,8 @@ const Tab = () => {
     const deleteItem = (i) => {
         if (active === i) {
             let index = tabs.findIndex(a => a.value === i);
-            setActive(tabs[index - 1].value)
+            let nextElem = tabs[index - 1]||tabs[index + 1]
+            setActive(nextElem.value)
         }
         setTabs([...tabs.filter(a => a.value !== i)]);
         setDeleteId(null)
