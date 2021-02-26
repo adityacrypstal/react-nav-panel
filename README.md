@@ -4,7 +4,7 @@ Control Multiple Tabs within React Component.
  
 You can see the [demo](https://codesandbox.io/s/react-custom-tab-panel-r8kb1).
 
-![alt text](https://github.com/[adityacrypstal]/[react-nav-panel]/blob/[master]/image.png?raw=true)
+![alt text](https://github.com/adityacrypstal/react-nav-panel/blob/master/image.png?raw=true)
 
 
 Created Using React 17.0.2
